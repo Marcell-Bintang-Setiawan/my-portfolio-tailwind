@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/tailwind.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="nav"> 
+    <div class="container flex items-center justify-between h-16 md:h-20">
+        <h1 class="relative z-30 font-semibold text-2xl">
+            Marcell B.S.
+        </h1>
+        <div class="flex items-center flex-row-reverse md:flex-row gap-12"> 
+          <!-- menu -->
+          <ul id="menu" class="nav-menus translate-y-[-200%] md:translate-y-0">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link"href="#about">About</a>
+            <a class="nav-link"href="#portfolio">Projects</a>
+            <a class="nav-link"href="#contact">Contact</a>
+          </ul>
+
+          <!-- hamburger -->
+          <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
+            <img src="./assets/images/icons/icon-menu.svg" alt="menu">
+          </button>
+
+          <!-- Toggle Theme  -->
+          <button id="toggle-theme" class="relative z-30 dark:invert">
+            <img 
+              src="./assets/images/icons/icon-dark.svg" 
+              alt="theme"
+              class="md:opacity-70 w-7 md:-mt-1"
+            >
+          </button>
+
+
+        </div>
+    </div>
+  </nav>
+
+
+  <!-- Main Section -->
+  <main class="container">
+    <!-- home section-->
+    <section id="home" class="home-section">
+      <div class="order-2 md:order-1 mt-10">
+        <h2 class="text-5xl md:text-6xl font-bold">
+          Hi, I am
+        </h2>
+        <h2 class="text-5xl md:text-6xl font-bold">
+          <span class="text-primary">Marcell Bintang Setiawan</span>
+        </h2>
+        <h3 class="text-2xl md:text-3xl font-bold opacity-70 mt-5 mb-10">
+          UI/UX Designer
+        </h3>
+        <a href="#portfolio" class="btn-primary">See My Work</a>
+      </div>
+      <div class="container-hero-image">
+        <img 
+          class="w-full h-full object-cover opacity-90 object-center"
+          src="./assets/images/marcell-3-transformed.png" 
+          alt="profile"
+        >
+      </div>
+    </section>
+    <!-- last home section -->
+
+    <!-- about section -->
+
+    <section id="about" class="py-32">
+
+      <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
+        <div class="rounded-full w-48 md:w-64 h-48 md:h-64 overflow-hidden bg-primary">
+          <img class="w-full h-full object-cover opacity-90" src="./assets/images/marcell-2.jpg" alt="profile">
+        </div>
+        <div class="w-full md:w-1/2 text-base md:text-lg text-center md:text-left">
+          <h2 class="text-primary font-bold text-2xl md:text-3xl mb-3">
+            Hi, I am Marcell Bintang Setiawan
+          </h2>
+          <p class="mb-3 opacity-80">
+            I am a Front-End Web Developer. I have a passion for UI/UX Design and I love to create beautiful and functional websites. I am a self-taught web developer and I am always looking for new ways to improve my skills. 
+          </p>
+          <p class="opacity-80">
+            Now I am currently studying at <a href="https://www.pens.ac.id/" target="_blank" class="text-primary">Politeknik Elektronika Negeri Surabaya</a>. I am well-versed in HTML, CSS, Javascript, and PHP. I am also very good at CorelDraw and Adobe Illustrator. Interested in outdoor activities, art, and puzzles.
+          </p>
+        </div>
+      </div>
+
+      <!-- My Skills -->
+
+      <div class="mt-32 text-center">
+        <h2 class="text-primary text-3xl md:text-4xl font-bold mb-14">
+          My Skills
+        </h2>
+
+        <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
+          <div class="skill" data-text="HTML : Advanced">
+            <img class="w-16" src="./assets/images/skills/html.png" alt="html">
+          </div>
+          <div class="skill" data-text="CSS : Advanced">
+            <img class="w-16" src="./assets/images/skills/css.png" alt="css">
+          </div>
+          <div class="skill" data-text="JavaScript : Basic">
+            <img class="w-16" src="./assets/images/skills/javascript.png" alt="js">
+          </div>
+          <!-- <div class="skill" data-text="PHP : Basic">
+            <img class="w-16" src="./assets/images/skills/php.svg" alt="php">
+          </div> -->
+          <div class="skill" data-text="TailwindCSS : Basic">
+            <img class="w-16" src="./assets/images/skills/tailwindcss.png" alt="tailwind">
+          </div>
+          <div class="skill" data-text="Bootstrap : Advanced">
+            <img class="w-16" src="./assets/images/skills/bootstrap.svg" alt="bootstrap">
+          </div>
+          <!-- <div class="skill" data-text="CodeIgniter : Basic">
+            <img class="w-16" src="./assets/images/skills/codeigniter.svg" alt="codeigniter">
+          </div> -->
+          <!-- <div class="skill" data-text="MySQL : Basic">
+            <img class="w-16" src="./assets/images/skills/mysql.svg" alt="mysql">
+          </div> -->
+          <div class="skill" data-text="CorelDraw : Advanced">
+            <img class="w-16" src="./assets/images/skills/CorelDraw.png" alt="coreldraw">
+          </div>
+          <div class="skill" data-text="Figma : Advanced">
+            <img class="w-16" src="./assets/images/skills/figma.svg" alt="html">
+          </div>
+        
+        </div>
+
+      </div>
+
+
+      <!-- My Skills end -->
+
+    </section>
+    <!-- last about section -->
+
+    <!-- dots -->
+    <div class="hidden md:flex items-center justify-between gap-3 w-full">
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-gradient-to-r from-primary/60 to-primary/0 flex-grow h-3"></div>
+    </div>
+
+    <!-- portfolio -->
+    <section id="portfolio" class="pt-32">
+      <div class="portfolio-heading">
+        My Projects
+      </div>
+      <ul class="w-full md:w-5/6 space-y-10 py-5">
+
+        <!-- project list -->
+        <li class="portfolio-card">
+          <div class="w-full md:w-1/3 h-60">
+            <img 
+              class="w-full h-full object-cover"
+              src="./assets/images/project1.png" 
+              alt="project1"
+            >
+          </div>
+          <div class="w-full md:w-2/3 p-5">
+            <h2 class="text-3xl font-bold mb-3">
+              Jam Digital Menggunakan HTML, CSS, dan Javasript
+            </h2>
+            <p>
+              Project ini merupakan project untuk mengaplikasikan HTML, CSS dan Javasript secara sederhana.
+            </p>
+            <div class="mt-8 font-semibold text-white flex items-center gap-2">
+              <a href="https://github.com/Marcell-Bintang-Setiawan/jam-digital" target="_blank" class="portfolio-link bg-primary">
+                <img class="w-5 h-5" src="./assets/images/icons/github.svg" alt="github">
+                Github
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="portfolio-card">
+          <div class="w-full md:w-1/3 h-60">
+            <img 
+              class="w-full h-full object-cover"
+              src="./assets/images/project2.png" 
+              alt="project1"
+            >
+          </div>
+
+          <div class="w-full md:w-2/3 p-5">
+            <h2 class="text-3xl font-bold mb-3">
+              Aplikasi Detail Film menggunakan OMDB API
+            </h2>
+            <p>
+              Project ini dibangun menggunkan PHP dan mengambil data dari API OMDB menggunkan JQuery Javascript.
+            </p>
+            <div class="mt-8 font-semibold text-white flex items-center gap-2">
+              <a href="https://github.com/Marcell-Bintang-Setiawan/Marcell-Middle-Test-Project" target="_blank" class="portfolio-link bg-primary">
+                <img class="w-5 h-5" src="./assets/images/icons/github.svg" alt="github">
+                Github
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="portfolio-card">
+          <div class="w-full md:w-1/3 h-60">
+            <img 
+              class="w-full h-full object-cover"
+              src="./assets/images/project4.png" 
+              alt="project1"
+            >
+          </div>
+          <div class="w-full md:w-2/3 p-5">
+            <h2 class="text-3xl font-bold mb-3">
+              Design UI untuk website pencari kerja DreamJob
+            </h2>
+            <p>
+              project ini dibuat menggunakan editor Figma
+            </p>
+            <div class="mt-8 font-semibold text-white flex items-center gap-2">
+              <a href="https://www.figma.com/file/IVLdq1D0Wv8sVuPP3h4Gbw/DreamJob?node-id=0%3A1" target="_blank" class="portfolio-link bg-primary">
+                <img class="w-5 h-5" src="./assets/images/skills/figma.svg" alt="figma">
+                Figma
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="portfolio-card">
+          <div class="w-full md:w-1/3 h-60">
+            <img 
+              class="w-full h-full object-cover"
+              src="./assets/images/project3.png" 
+              alt="project1"
+            >
+          </div>
+          <div class="w-full md:w-2/3 p-5">
+            <h2 class="text-3xl font-bold mb-3">
+              Website Administrasi Kecamatan
+            </h2>
+            <p>
+              Website ini dibangun menggunakan bahasa pemrograman PHP, dengan framework CodeIgniter 4.
+            </p>
+            <div class="mt-8 font-semibold text-white flex items-center gap-2">
+              <a href="https://github.com/Marcell-Bintang-Setiawan/ci4-kecamatan" target="_blank" class="portfolio-link bg-primary">
+                <img class="w-5 h-5" src="./assets/images/icons/github.svg" alt="github">
+                Github
+              </a>
+            </div>
+          </div>
+        </li>
+
+
+      </ul>
+    </section>
+
+
+    <!-- akhir portfolio -->
+
+  </main>
+
+  <!-- footer -->
+  <footer class="w-full text-center mt-40 bg-white dark:bg-primary-gray">
+    <!-- contact section -->
+     
+    <section id="contact" class="flex flex-col gap-12 justify-center items-center py-20">
+      <h2 class="text-4xl md:text-5xl font-bold text-primary">
+        Contact Me
+      </h2>
+      <div class="flex flex-wrap justify-center gap-5 md:gap-10">
+        <a href="https://www.instagram.com/bintang_1513/" class="contact-link bg-gray-100">
+          <img src="./assets/images/icons/icons8-instagram.svg" alt="instagram">
+        </a>
+        <a href="https://github.com/Marcell-Bintang-Setiawan" class="contact-link bg-gray-100">
+          <img src="./assets/images/icons/UimGithubAlt.svg" alt="github">
+        </a>
+        <a href="https://www.linkedin.com/in/marcell-bintang-setiawan-7606161b8/" class="contact-link bg-gray-100">
+          <img src="./assets/images/icons/LogosLinkedinIcon.svg" alt="linkedin">
+        </a>
+        <a href="mailto:marcellbs@gdrive-id.com?subject=judul%20email&body=Pesan%20ini%20akan%20secara%20otomatis%20muncul%21" class="contact-link bg-gray-100">
+          <img src="./assets/images/icons/LogosGoogleGmail.svg" alt="gmail">
+        </a>
+        
+        
+      </div>
+    </section>
+    <h2 class="pb-10">
+      &copy; Copyright 2022 Made With <span class="text-pink-500">❤</span> By <a href="#">Marcell Bintang Setiawan</a>
+    </h2>
+
+  </footer>
+
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
